@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <title>Appliances4Less</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="public/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/slick.css">
+</head>
+
+<body class="body-bg">
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+    <div class="container py-2 d-block">
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-4 logo text-center text-sm-start">
+                <img class="img-fluid" src="public/images/Scroll%20Group%201.png" alt="">
+            </div>
+            <div class="col-6 col-sm-6 col-md-8">
+                <div class="d-flex search-area justify-content-end">
+
+                    <form action="#" id="search_form" class="search d-flex d-none d-md-flex position-relative">
+                        <input type="text" class="form-control" placeholder="Search For Products">
+                        <button class="btn" type="submit">
+                            <img src="./public/images/serach-icon.png" style="height: 18px">
+                        </button>
+                    </form>
+
+
+                    <div class="d-flex">
+                        <a href="" class="search-icon text-center mx-1 d-inline d-md-none"
+                           data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <img src="public/images/serach-icon.png">
+                        </a>
+                        <a href="" class="search-icon text-center mx-1">
+                            <img src="public/images/store-icon.png">
+                        </a>
+                        <a href="" class="search-icon text-center mx-1">
+                            <img src="public/images/phone-icon.png">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+<section>
+    <div class="py-3 py-md-5 d-none d-md-block">
+        <div class="container">
+            <div>
+                <p class="mb-1">Search Filter</p>
+            </div>
+            <form action="#" id="filters_form">
+
+                <div class="bg-white p-md-4 search-wrapper d-flex justify-content-around align-items-center">
+                    <div class="filter-select-wrapper">
+                        <select>
+                            <option>Item Catagories</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrapper">
+                        <select>
+                            <option>Filter By Brand</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrapper">
+                        <select>
+                            <option>Item Condition</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrapper">
+                        <select>
+                            <option>Price</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="">
+                        <button class="btn-apply" type="submit">
+                            APPLY
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container mt-4 mt-md-0">
+        <div class="total-results">
+            <p>1999 results</p>
+        </div>
+        <div class="search-item">
+            <div class="search-item__wrapper row">
+                <div class="image-slider col-lg-4">
+                    <div class="image-slider__slick">
+                        <div class="image-slider__slide">
+                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid" data-scratch="true">
+                        </div>
+                        <div class="image-slider__slide" data-toggle="lightbox">
+                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid">
+                        </div>
+                        <div class="image-slider__slide" data-toggle="lightbox">
+                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-wrapper col-lg-8">
+                    <div class="details-header">
+                        <div class="badge badge-danger">
+                            <img src="./public/images/Icon%20awesome-box-open.png" alt="">
+                            <span>Condition: <span class="condition">Brand New</span></span>
+                        </div>
+                        <div class="badge badge-primary">
+                            <img src="./public/images/Icon%20feather-package.png" alt="">
+                            <span>3 units available</span>
+                        </div>
+                    </div>
+
+                    <div class="details-content__wrapper">
+                        <div class="details-content">
+                            <div class="title">
+                                <h3>Four Burners Classic Stove with really long title, Stainless Steel Body, Integrated
+                                    Oven</h3>
+                            </div>
+                            <div class="row align-items-center my-md-4">
+                                <div class="col-md-6 mt-1 my-md-0">
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="price">$9,900</h4>
+
+                                        <div class="badge badge-success price-save-badge">
+                                            <img src="./public/images/Icon-awesome-dollar-sign.png" alt="">
+                                            <span>Save $40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-5 mb-2 my-md-0">
+                                    <div class="graph__wrapper">
+                                        <div class="graph">
+                                            <div class="graph__main">
+                                                <div class="graph__a4l" style="width: 70%">
+                                                    <div class="labels">
+                                                        <span class="title">Our Price</span>
+                                                        <span class="price">$10,345</span>
+                                                    </div>
+                                                </div>
+                                                <div class="graph__others">
+                                                    <div class="labels">
+                                                        <span class="title">New Items</span>
+                                                        <span class="price">$12,345</span>
+                                                    </div>
+
+                                                    <div class="details">
+                                                        <table class="table table-sm table-borderless m-0">
+                                                            <tr>
+                                                                <td>Home Depot</td>
+                                                                <td>$1200</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Best Buy</td>
+                                                                <td>$1200</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Lowe's</td>
+                                                                <td>$1200</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="pickup mt-5">
+                                <p>
+                                    <img src="./public/images/Icon%20awesome-truck-moving.png" alt="">
+                                    Pickup at Oct 30, 2022 from address 123, city abc, state xyz, USA
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-item">
+            <div class="search-item__wrapper row">
+                <div class="image-slider col-lg-4">
+                    <div class="image-slider__slick">
+                        <div class="image-slider__slide">
+                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid" data-scratch="true">
+                        </div>
+                        <div class="image-slider__slide" data-toggle="lightbox">
+                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid">
+                        </div>
+                        <div class="image-slider__slide" data-toggle="lightbox">
+                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-wrapper col-lg-8">
+                    <div class="details-header">
+                        <div class="badge badge-danger">
+                            <img src="./public/images/Icon%20awesome-box-open.png" alt="">
+                            <span>Condition: <span class="condition">Brand New</span></span>
+                        </div>
+                        <div class="badge badge-primary">
+                            <img src="./public/images/Icon%20feather-package.png" alt="">
+                            <span>3 units available</span>
+                        </div>
+                    </div>
+
+                    <div class="details-content__wrapper">
+                        <div class="details-content">
+                            <div class="title">
+                                <h3>Four Burners Classic Stove with really long title, Stainless Steel Body, Integrated
+                                    Oven</h3>
+                            </div>
+                            <div class="row align-items-center my-md-4">
+                                <div class="col-md-6 mt-1 my-md-0">
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="price">$9,900</h4>
+
+                                        <div class="badge badge-success price-save-badge">
+                                            <img src="./public/images/Icon-awesome-dollar-sign.png" alt="">
+                                            <span>Save $40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-5 mb-2 my-md-0">
+                                    <div class="graph__wrapper">
+                                        <div class="graph">
+                                            <div class="graph__main">
+                                                <div class="graph__a4l" style="width: 70%">
+                                                    <div class="labels">
+                                                        <span class="title">Our Price</span>
+                                                        <span class="price">$10,345</span>
+                                                    </div>
+                                                </div>
+                                                <div class="graph__others">
+                                                    <div class="labels">
+                                                        <span class="title">New Items</span>
+                                                        <span class="price">$12,345</span>
+                                                    </div>
+
+                                                    <div class="details">
+                                                        <table class="table table-sm table-borderless m-0">
+                                                            <tr>
+                                                                <td>Home Depot</td>
+                                                                <td>$1200</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Best Buy</td>
+                                                                <td>$1200</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Lowe's</td>
+                                                                <td>$1200</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="pickup mt-5">
+                                <p>
+                                    <img src="./public/images/Icon%20awesome-truck-moving.png" alt="">
+                                    Pickup at Oct 30, 2022 from address 123, city abc, state xyz, USA
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-item">
+            <div class="search-item__wrapper row">
+                <div class="image-slider col-lg-4">
+                    <div class="image-slider__slick">
+                        <div class="image-slider__slide">
+                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid" data-scratch="true">
+                        </div>
+                        <div class="image-slider__slide" data-toggle="lightbox">
+                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid">
+                        </div>
+                        <div class="image-slider__slide" data-toggle="lightbox">
+                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid" data-scratch="true">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-wrapper col-lg-8">
+                    <div class="details-header">
+                        <div class="badge badge-danger">
+                            <img src="./public/images/Icon%20awesome-box-open.png" alt="">
+                            <span>Condition: <span class="condition">Brand New</span></span>
+                        </div>
+                        <div class="badge badge-primary">
+                            <img src="./public/images/Icon%20feather-package.png" alt="">
+                            <span>3 units available</span>
+                        </div>
+                    </div>
+
+                    <div class="details-content__wrapper">
+                        <div class="details-content">
+                            <div class="title">
+                                <h3>Four Burners Classic Stove with really long title, Stainless Steel Body, Integrated
+                                    Oven</h3>
+                            </div>
+                            <div class="row align-items-center my-md-4">
+                                <div class="col-md-6 mt-1 my-md-0">
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="price">$9,900</h4>
+
+                                        <div class="badge badge-success price-save-badge">
+                                            <img src="./public/images/Icon-awesome-dollar-sign.png" alt="">
+                                            <span>Save $40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-5 mb-2 my-md-0">
+                                    <div class="graph__wrapper">
+                                        <div class="graph">
+                                            <div class="graph__main">
+                                                <div class="graph__a4l" style="width: 70%">
+                                                    <div class="labels">
+                                                        <span class="title">Our Price</span>
+                                                        <span class="price">$10,345</span>
+                                                    </div>
+                                                </div>
+                                                <div class="graph__others">
+                                                    <div class="labels">
+                                                        <span class="title">New Items</span>
+                                                        <span class="price">$12,345</span>
+                                                    </div>
+
+                                                    <div class="details">
+                                                        <table class="table table-sm table-borderless m-0">
+                                                            <tr>
+                                                                <td>Home Depot</td>
+                                                                <td>$1200</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Best Buy</td>
+                                                                <td>$1200</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Lowe's</td>
+                                                                <td>$1200</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="pickup mt-5">
+                                <p>
+                                    <img src="./public/images/Icon%20awesome-truck-moving.png" alt="">
+                                    Pickup at Oct 30, 2022 from address 123, city abc, state xyz, USA
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title h6 fw-bold" id="staticBackdropLabel">Search & Filter Appliances</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-12 search-area">
+                        <div class="search d-flex position-relative w-100">
+                            <input type="text" class="form-control" placeholder="Search For Products">
+                            <button class="btn">
+                                <img src="./public/images/serach-icon.png" style="height: 18px">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <form action="#" id="search_filters_mobile">
+                    <div class="search-wrapper px-0 pt-3 shadow-none d-flex flex-column justify-content-center align-items-center">
+                        <p class="text-start w-100">Search Filters</p>
+
+                        <div class="filter-select-wrapper w-100 mb-4 mx-0">
+                            <select>
+                                <option>Item Catagories</option>
+                                <option>Category 1</option>
+                                <option>Category 2</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-select-wrapper w-100 mb-4 mx-0 ">
+                            <select>
+                                <option>Filter By Brand</option>
+                                <option>Brand 1</option>
+                                <option>Brand 2</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-select-wrapper w-100 mb-4 mx-0 ">
+                            <select>
+                                <option>Item Condition</option>
+                                <option>New</option>
+                                <option>Old</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-select-wrapper w-100 mb-4 mx-0 ">
+                            <select>
+                                <option>Price</option>
+                                <option>200 - 900</option>
+                                <option>901 - 10000</option>
+                            </select>
+                        </div>
+
+                        <div class="w-100">
+                            <button class="btn-apply" type="submit">
+                                APPLY
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--LIGHTBOX-->
+<div class="modal fade" id="lightbox-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content position-relative">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="modal-body">
+                <div class="p-5 d-block w-100 slider-wrapper" id="lightbox-slider__wrapper">
+                    <div id="lightbox-slider"></div>
+                    <div id="scratches"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script src="./public/js/main.js" type="text/javascript"></script>
+</body>
+</html>
