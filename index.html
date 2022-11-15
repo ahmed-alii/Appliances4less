@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8"/>
     <title>Appliances4Less</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="public/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/slick.css">
 </head>
@@ -35,7 +37,8 @@
                             <img src="public/images/serach-icon.png">
                         </a>
                         <a href="" class="search-icon text-center mx-1">
-                            <img src="public/images/store-icon.png">
+                            <!--<img src="public/images/store-icon.png">-->
+                            <i class="fa fa-location-pin text-white"></i>
                         </a>
                         <a href="" class="search-icon text-center mx-1">
                             <img src="public/images/phone-icon.png">
@@ -97,7 +100,18 @@
             </form>
         </div>
     </div>
+
+    <div class="d-block d-md-none">
+        <div class="container">
+            <button class="btn btn-apply btn-dark my-4 w-100"
+                    data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            >Search & Filters
+            </button>
+        </div>
+    </div>
 </section>
+
+
 <section>
     <div class="container mt-4 mt-md-0">
         <div class="total-results">
@@ -122,12 +136,52 @@
                 <div class="details-wrapper col-lg-8">
                     <div class="details-header">
                         <div class="badge badge-danger">
-                            <img src="./public/images/Icon%20awesome-box-open.png" alt="">
-                            <span>Condition: <span class="condition">Brand New</span></span>
+                            <svg x="0px" y="0px"
+                                 width="30.879px" height="30.879px" viewBox="0 0 30.879 30.879" style=""
+                                 xml:space="preserve" fill="red">
+                                <g>
+                                    <g>
+                                        <path d="M30.172,7.924l-3.707-4.652c-0.35-0.439-0.882-0.695-1.443-0.695H5.856c-0.563,0-1.095,0.256-1.444,0.695L0.705,7.924
+                                            C0.316,8.41,0,9.053,0,9.938v16.056c0,1.274,1.033,2.308,2.308,2.308H28.57c1.275,0,2.309-1.033,2.309-2.308V9.938
+                                            C30.877,9.163,30.561,8.41,30.172,7.924z M12.187,25.101c0.096,0.021,0.165,0.104,0.165,0.203v0.445
+                                            c0,0.128-0.104,0.23-0.231,0.23H5.29c-0.113,0-0.206-0.092-0.206-0.207v-0.471c0-0.098,0.069-0.183,0.165-0.201l2.414-0.49V22.59
+                                            c-1.948-0.476-3.398-2.219-3.398-4.313c0-1.127,0.433-2.146,1.123-2.929h6.66c0.69,0.785,1.124,1.802,1.124,2.929
+                                            c0,2.095-1.45,3.838-3.397,4.313v2.021L12.187,25.101z M28.135,25.806c0,0.102-0.083,0.184-0.185,0.184H17.74
+                                            c-0.102,0-0.186-0.082-0.186-0.184V25.25c0-0.103,0.084-0.185,0.186-0.185h10.211c0.102,0,0.186,0.082,0.186,0.185v0.556H28.135z
+                                             M18.691,18.712c-0.284,0-0.461-0.311-0.319-0.557l1.437-2.483c0.142-0.246,0.496-0.246,0.641,0l1.435,2.483
+                                            c0.144,0.248-0.036,0.557-0.321,0.557h-0.602v4.631c0,0.205-0.165,0.37-0.37,0.37h-0.926c-0.203,0-0.369-0.166-0.369-0.37v-4.631
+                                            H18.691z M24.244,18.712c-0.285,0-0.463-0.311-0.32-0.557l1.434-2.483c0.145-0.246,0.5-0.246,0.642,0l1.437,2.483
+                                            c0.143,0.248-0.035,0.557-0.32,0.557h-0.602v4.631c0,0.205-0.168,0.37-0.371,0.37h-0.926c-0.203,0-0.369-0.166-0.369-0.37v-4.631
+                                            H24.244z M1.917,7.884l1.227-1.541h6.77l1-1.359H4.227l0.906-1.137c0.178-0.221,0.44-0.348,0.723-0.348h19.166
+                                            c0.283,0,0.545,0.126,0.723,0.348l0.906,1.137h-6.711l1,1.359h6.795l1.227,1.541H1.917z"/>
+                                    </g>
+                                </g>
+
+                            </svg>
+                            <span>Opened box within 48 hours</span>
+                        </div>
+                        <div class="badge badge-warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px"
+                                 width="100%"
+                                 height="100%"
+                                 viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                                <g>
+                                    <path d="M131.188,259.022H7.871c-4.342,0-7.871,3.531-7.871,7.875V406.06c0,4.342,3.529,7.871,7.871,7.871h123.316   c4.342,0,7.873-3.529,7.873-7.871V266.897C139.061,262.554,135.529,259.022,131.188,259.022z"/>
+                                    <path d="M198.988,259.022h-36.921c-4.343,0-7.876,3.531-7.876,7.875V406.06c0,4.342,3.533,7.871,7.876,7.871h36.921   c4.342,0,7.869-3.529,7.869-7.871V266.897C206.857,262.554,203.33,259.022,198.988,259.022z M180.527,299.286   c-5.287,0-9.57-4.284-9.57-9.567c0-5.284,4.283-9.568,9.57-9.568c5.283,0,9.566,4.284,9.566,9.568   C190.094,295.002,185.811,299.286,180.527,299.286z"/>
+                                    <path d="M468.102,327.465c-7.426,2.844-30.418,29.5-42.863,32.761c-12.428,0-85.338,0.006-85.338,0.006   c-8.387,0-15.193-6.808-15.193-15.204c0-8.393,6.807-15.198,15.193-15.198h45.703c10.574,0,19.182-8.606,19.182-19.186   c0-10.578-8.607-19.184-19.182-19.184H267.969c-20.191,0-36.623,16.433-36.623,36.625v49.224c0,20.195,16.432,36.623,36.623,36.623   c0,0,85.137,0,111.832,0c14.715,0,28.703-1.059,42.35-7.361c23.435-10.819,50.809-38.287,56.154-43.771   c5.234-5.372,8.182-7.838,10.305-12.685C494.305,337.145,481.52,322.323,468.102,327.465z"/>
+                                    <g>
+                                        <path d="M348.104,168.104H241.984c-1.391,0-2.523,1.126-2.523,2.514v34.702c0,19.136,15.572,34.703,34.709,34.703h73.934    c1.381,0,2.516-1.128,2.516-2.513v-66.893C350.619,169.23,349.484,168.104,348.104,168.104z"/>
+                                        <path d="M348.104,76.068H274.17c-19.137,0-34.709,15.567-34.709,34.703v34.702c0,1.389,1.133,2.513,2.523,2.513h106.119    c1.381,0,2.516-1.124,2.516-2.513V78.58C350.619,77.193,349.484,76.068,348.104,76.068z"/>
+                                        <path d="M447.176,76.068h-73.93c-1.391,0-2.51,1.125-2.51,2.512v66.894c0,1.389,1.119,2.513,2.51,2.513h106.123    c1.389,0,2.51-1.124,2.51-2.513v-34.702C481.879,91.636,466.313,76.068,447.176,76.068z"/>
+                                        <path d="M479.369,168.104H373.246c-1.391,0-2.51,1.126-2.51,2.514v66.893c0,1.385,1.119,2.513,2.51,2.513h73.93    c19.137,0,34.703-15.567,34.703-34.703v-34.702C481.879,169.23,480.758,168.104,479.369,168.104z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>Minimal Wear</span>
                         </div>
                         <div class="badge badge-primary">
                             <img src="./public/images/Icon%20feather-package.png" alt="">
-                            <span>3 units available</span>
+                            <span>Same Model: 3 Units</span>
                         </div>
                     </div>
 
@@ -137,14 +191,17 @@
                                 <h3>Four Burners Classic Stove with really long title, Stainless Steel Body, Integrated
                                     Oven</h3>
                             </div>
-                            <div class="row align-items-center my-md-4">
+                            <div class="row align-items-center my-md-5">
                                 <div class="col-md-6 mt-1 my-md-0">
                                     <div class="d-flex align-items-center">
                                         <h4 class="price">$9,900</h4>
 
-                                        <div class="badge badge-success price-save-badge">
-                                            <img src="./public/images/Icon-awesome-dollar-sign.png" alt="">
-                                            <span>Save $40</span>
+                                        <!--                                        <div class="badge badge-success price-save-badge">-->
+                                        <!--                                            <img src="./public/images/Icon-awesome-dollar-sign.png" alt="">-->
+                                        <!--                                            <span>Save $40</span>-->
+                                        <!--                                        </div>-->
+                                        <div class="save-text">
+                                            Save $400
                                         </div>
                                     </div>
                                 </div>
@@ -189,6 +246,7 @@
                             </div>
 
                             <div class="pickup mt-5">
+                                <p>Model Number: 123123123</p>
                                 <p>
                                     <img src="./public/images/Icon%20awesome-truck-moving.png" alt="">
                                     Pickup at Oct 30, 2022 from address 123, city abc, state xyz, USA
@@ -201,201 +259,7 @@
             </div>
         </div>
 
-        <div class="search-item">
-            <div class="search-item__wrapper row">
-                <div class="image-slider col-lg-4">
-                    <div class="image-slider__slick">
-                        <div class="image-slider__slide">
-                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid" data-scratch="true">
-                        </div>
-                        <div class="image-slider__slide" data-toggle="lightbox">
-                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid">
-                        </div>
-                        <div class="image-slider__slide" data-toggle="lightbox">
-                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="details-wrapper col-lg-8">
-                    <div class="details-header">
-                        <div class="badge badge-danger">
-                            <img src="./public/images/Icon%20awesome-box-open.png" alt="">
-                            <span>Condition: <span class="condition">Brand New</span></span>
-                        </div>
-                        <div class="badge badge-primary">
-                            <img src="./public/images/Icon%20feather-package.png" alt="">
-                            <span>3 units available</span>
-                        </div>
-                    </div>
-
-                    <div class="details-content__wrapper">
-                        <div class="details-content">
-                            <div class="title">
-                                <h3>Four Burners Classic Stove with really long title, Stainless Steel Body, Integrated
-                                    Oven</h3>
-                            </div>
-                            <div class="row align-items-center my-md-4">
-                                <div class="col-md-6 mt-1 my-md-0">
-                                    <div class="d-flex align-items-center">
-                                        <h4 class="price">$9,900</h4>
-
-                                        <div class="badge badge-success price-save-badge">
-                                            <img src="./public/images/Icon-awesome-dollar-sign.png" alt="">
-                                            <span>Save $40</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mt-5 mb-2 my-md-0">
-                                    <div class="graph__wrapper">
-                                        <div class="graph">
-                                            <div class="graph__main">
-                                                <div class="graph__a4l" style="width: 70%">
-                                                    <div class="labels">
-                                                        <span class="title">Our Price</span>
-                                                        <span class="price">$10,345</span>
-                                                    </div>
-                                                </div>
-                                                <div class="graph__others">
-                                                    <div class="labels">
-                                                        <span class="title">New Items</span>
-                                                        <span class="price">$12,345</span>
-                                                    </div>
-
-                                                    <div class="details">
-                                                        <table class="table table-sm table-borderless m-0">
-                                                            <tr>
-                                                                <td>Home Depot</td>
-                                                                <td>$1200</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Best Buy</td>
-                                                                <td>$1200</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Lowe's</td>
-                                                                <td>$1200</td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="pickup mt-5">
-                                <p>
-                                    <img src="./public/images/Icon%20awesome-truck-moving.png" alt="">
-                                    Pickup at Oct 30, 2022 from address 123, city abc, state xyz, USA
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="search-item">
-            <div class="search-item__wrapper row">
-                <div class="image-slider col-lg-4">
-                    <div class="image-slider__slick">
-                        <div class="image-slider__slide">
-                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid" data-scratch="true">
-                        </div>
-                        <div class="image-slider__slide" data-toggle="lightbox">
-                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid">
-                        </div>
-                        <div class="image-slider__slide" data-toggle="lightbox">
-                            <img src="https://via.placeholder.com/500" alt="" class="img-fluid" data-scratch="true">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="details-wrapper col-lg-8">
-                    <div class="details-header">
-                        <div class="badge badge-danger">
-                            <img src="./public/images/Icon%20awesome-box-open.png" alt="">
-                            <span>Condition: <span class="condition">Brand New</span></span>
-                        </div>
-                        <div class="badge badge-primary">
-                            <img src="./public/images/Icon%20feather-package.png" alt="">
-                            <span>3 units available</span>
-                        </div>
-                    </div>
-
-                    <div class="details-content__wrapper">
-                        <div class="details-content">
-                            <div class="title">
-                                <h3>Four Burners Classic Stove with really long title, Stainless Steel Body, Integrated
-                                    Oven</h3>
-                            </div>
-                            <div class="row align-items-center my-md-4">
-                                <div class="col-md-6 mt-1 my-md-0">
-                                    <div class="d-flex align-items-center">
-                                        <h4 class="price">$9,900</h4>
-
-                                        <div class="badge badge-success price-save-badge">
-                                            <img src="./public/images/Icon-awesome-dollar-sign.png" alt="">
-                                            <span>Save $40</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mt-5 mb-2 my-md-0">
-                                    <div class="graph__wrapper">
-                                        <div class="graph">
-                                            <div class="graph__main">
-                                                <div class="graph__a4l" style="width: 70%">
-                                                    <div class="labels">
-                                                        <span class="title">Our Price</span>
-                                                        <span class="price">$10,345</span>
-                                                    </div>
-                                                </div>
-                                                <div class="graph__others">
-                                                    <div class="labels">
-                                                        <span class="title">New Items</span>
-                                                        <span class="price">$12,345</span>
-                                                    </div>
-
-                                                    <div class="details">
-                                                        <table class="table table-sm table-borderless m-0">
-                                                            <tr>
-                                                                <td>Home Depot</td>
-                                                                <td>$1200</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Best Buy</td>
-                                                                <td>$1200</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Lowe's</td>
-                                                                <td>$1200</td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="pickup mt-5">
-                                <p>
-                                    <img src="./public/images/Icon%20awesome-truck-moving.png" alt="">
-                                    Pickup at Oct 30, 2022 from address 123, city abc, state xyz, USA
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 

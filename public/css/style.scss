@@ -5,6 +5,11 @@ $primary-bg: rgba(201, 224, 255, 0.78);
 $danger-bg: rgba(255, 132, 132, 0.21);
 $success-bg: rgba(70, 201, 0, 0.3);
 
+@media only screen and (min-width: 1080px){
+    body > *:not(nav):not(.modal){
+        scale: 0.9;
+    }
+}
 
 nav {
     .logo {
@@ -126,15 +131,15 @@ p {
         }
     }
 
-    .btn-apply {
-        min-width: 100%;
-        border-radius: 100px;
-        background-color: #3B57A7;
-        border: none;
-        height: 40px;
-        color: white;
-    }
+}
 
+.btn-apply {
+    min-width: 100%;
+    border-radius: 100px;
+    background-color: #3B57A7;
+    border: none;
+    height: 40px;
+    color: white;
 }
 
 .search-item {
@@ -164,6 +169,10 @@ p {
                 border-radius: 6px;
                 overflow: hidden;
                 background-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
 
                 @media only screen and (max-width: 769px) {
                     width: 100%;
@@ -178,9 +187,9 @@ p {
                     object-fit: cover;
 
                     @media only screen and (max-width: 769px) {
-                        height: 300px;
+                        height: auto;
                         width: auto;
-                        margin: auto;
+                        //margin: auto;
                     }
                 }
             }
@@ -204,6 +213,10 @@ p {
 
                 @media only screen and (max-width: 769px) {
                     padding-left: 0;
+                    flex-wrap: wrap;
+                    & > div{
+                        margin-bottom: 4px;
+                    }
                 }
             }
 
@@ -406,7 +419,7 @@ p {
         height: 26px;
     }
 
-    img {
+    img, svg {
         max-height: 22px;
         max-width: 22px;
         margin-right: 6px;
@@ -430,10 +443,23 @@ p {
 
 .badge-danger {
     background-color: $danger-bg;
+    svg{
+        fill: rgba(255, 0, 0, 0.58)
+    }
 }
-
+.badge-warning {
+    background-color: rgba(253, 118, 69, 0.24);
+    svg{
+        fill: rgba(232, 83, 32, 0.67)
+    }
+}
 .badge-success {
     background-color: $success-bg !important;
+}
+.save-text{
+    color: orangered;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 #lightbox-modal{
@@ -455,8 +481,8 @@ p {
 
         #lightbox-slider{
             img{
-                max-width: 100%;
-                width: 100%;
+                //max-width: 100%;
+                //width: 100%;
                 max-height: 90vh;
                 margin: auto;
                 object-fit: cover;
